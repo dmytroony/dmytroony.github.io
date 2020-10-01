@@ -1,100 +1,166 @@
+:root {
+  --bgColor: #f3fbff;
+  --lnkColor: dodgerblue ;
+  --lnkHoverColor: #61dafb ;
+  --bgBarColor: #343a40;
+}
 
 html {
-	scroll-behavior: smooth;
-	padding: 0;
-	margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	background: #e2fcf6;
-	height: 100vh;
+  background: var(--bgColor);
+  height: 100vh;
 }
 
-#Header .a:hover {
-	color: #fff;
+body * {
+  transition: .3s ease-out;
+}
+
+:any-link {
+  color: var(--lnkColor);
+}
+
+:any-link:hover,
+:any-link:focus {
+  color: var(--lnkHoverColor);
+}
+
+#Header a:hover {
+  color: #fff !important;
 }
 
 #bg-img {
-	background: url("../img/bg-laptop.jpeg") no-repeat center fixed;
-	background-size: cover;
-	height: 100%;
-	max-height: 100vh;
+  background: url("../img/bg-laptop.jpeg") no-repeat center fixed;
+  background-size: cover;
+  height: 100%;
+  max-height: 100vh;
 }
 
 #About {
-	margin-top: -18%;
+  margin-top: -30%;
+  width: 100% !important;
 }
 
-a.socicon {
-	color: #fff;
+#About .vertical-line {
+  border-left: 2px solid darkgray;
 }
 
-a.socicon:hover, .navbar-brand h3:hover {
-	color: #61dafb;
+.vertical-line > div {
+  margin: 1.5rem auto;
 }
 
 .svg-inline--fa {
-	margin: 0 5% !important;
+  color: #fff !important;
+  margin: 0 5% !important;
 }
+
+a.socicon:hover,
+.navbar-brand h3:hover,
+#backToTop a:hover,
+.svg-inline--fa:hover{
+  color: #61dafb !important;
+  transition: none !important;
+}
+
 
 #About #AboutMe span,
 #Skills span,
-#Experience span,
+#Projects span,
 #Contact span {
-	padding: 10px 20px;
-	border-radius: 5px 5px 0 0;
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
 }
 
 #About #AboutMe hr,
 #Skills hr,
-#Experience hr,
+#Projects hr,
 #Contact hr {
-	border-width: 3px;
-	margin-top: 6px;
+  border-width: 3px;
+  margin-top: 6px;
 }
 
 #progress-html .progress-bar {
-	width: 95%;
+  width: 95%;
 }
 
 #progress-css .progress-bar {
-	width: 95%;
+  width: 95%;
 }
 
 #progress-js .progress-bar {
-	width: 45%;
+  width: 45%;
 }
 
 #progress-jquery .progress-bar {
-	width: 70%;
+  width: 70%;
 }
 
 #progress-react .progress-bar {
-	width: 30%;
+  width: 30%;
 }
 
 #progress-sass-less-scss .progress-bar {
-	width: 70%;
+  width: 70%;
 }
 
 #progress-flex-grid .progress-bar {
-	width: 70%;
+  width: 70%;
 }
 
 #progress-git .progress-bar {
-	width: 60%;
+  width: 60%;
 }
 
 #Skills h3 {
-	margin-top: 6px;
-	margin-bottom: -3px;
+  margin-top: 6px;
+  margin-bottom: -3px;
+  font-size: 1.3rem;
 }
 
-#Experience img {
-	width: 200px;
-	height: 80px;
+#Projects img {
+  width: 200px;
+  height: 80px;
 }
 
-#Experience .card {
-	border-top: 3px solid dodgerblue;
+#Projects .card {
+  border-top: 3px solid #1e90ff;
+}
+
+#Experience span {
+  border-radius: 3px !important;
+  padding: 5px;
+}
+
+#experienced:target {
+  transition: background-color 4s ease-in-out;;
+  background-color: #61dafb !important;
+}
+
+#backToTop {
+  width: 3rem;
+  height: 3rem;
+  background-color:  rgba(30, 144, 255, .3);
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0;
+}
+
+#backToTop a {
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+#backToTop a:hover {
+  background-color:  var(--lnkHoverColor);
+  opacity: 1;
 }

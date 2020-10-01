@@ -25,7 +25,7 @@
 
 	<title>Dmytro Portfolio</title>
 </head>
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".navbar" id="body">
 
 <!--Navbar START-->
 <header>
@@ -39,25 +39,25 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<a href="#" class="navbar-brand">
+				<a href="./index.html" class="navbar-brand">
 					<h3>Dmytro Onysko</h3>
 				</a>
 				<div class="collapse navbar-collapse" id="Navbar">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a href="#About" class="nav-link">About</a>
+							<a href="#About" class="nav-link text-info">About</a>
 						</li>
 						<li class="nav-item">
-							<a href="#Skills" class="nav-link">Skills</a>
+							<a href="#Skills" class="nav-link text-info">Skills</a>
 						</li>
 						<li class="nav-item">
-							<a href="#Experience" class="nav-link">Experience</a>
+							<a href="#experienced" class="nav-link text-info">Experience</a>
 						</li>
 						<li class="nav-item">
-							<a href="#Projects" class="nav-link">Projects</a>
+							<a href="#Projects" class="nav-link text-info">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a href="#Contact" class="nav-link">Contact</a>
+							<a href="#Contact" class="nav-link text-info">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -72,7 +72,7 @@
 <!--ShowCase END-->
 
 <!--About me START-->
-<section id="About" style="width: 100% !important;">
+<section id="About">
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -86,59 +86,63 @@
 										alt="Person photo"
 								>
 								<div class="media-body w-100">
-									<h3 class="h1-md h3-sm pl-5">
+									<h3 class="h1-md h3-sm pl-4">
 										I&apos;m Dmytro
 									</h3>
-									<p class="text-muted ml-5">
+									<p class="text-muted ml-4">
 										Web-Developer &amp; Entrepreneur
 									</p>
 									<div class="container">
-										<table class="table table-responsive pl-4">
-											<tr>
-												<td class="text-muted">Email</td>
-												<td>:</td>
-												<td>
-													<a class="btn-link" href="mailto:dmytroony@gmail.com">
+										<div class="container d-flex-row vertical-line ml-4">
+											<div class="d-flex">
+												<div class="text-muted">Email: </div>
+												<div>
+													<a href="mailto:dmytroony@gmail.com">
 														dmytroony@gmail.com
 													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-muted">Phone</td>
-												<td>:</td>
-												<td>
-													<a class="btn-link" href="tel:+380958052625">
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="text-muted">Phone:</div>
+												<div>
+													<a href="tel:+380958052625">
 														+38 095 805 26 25
 													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-muted">Skype</td>
-												<td>:</td>
-												<td>
-													<a class="btn-link" href="skype:dm.onysko?chat">
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="text-muted">Skype:</div>
+												<div>
+													<a href="skype:dm.onysko?chat">
 														dm.onysko
 													</a>
-												</td>
-											</tr>
-											<tr>
-												<td class="text-muted">Age</td>
-												<td>:</td>
-												<td><span id="currentAge">Age</span> Years Old</td>
-											</tr>
-										</table>
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="text-muted">English:</div>
+												<div>
+													A2-B1
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="text-muted">Age:</div>
+												<div>
+													<span id="currentAge">Age</span> years old
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="card-footer bg-banner bg-dark text-right">
-							<a href="https://github.com/dmytroony" class="socicon" target="_blank"><i
+							<a href="https://github.com/dmytroony" class="social-icons" target="_blank"><i
 									class="fab fa-github fa-2x mx-3"></i></a>
-							<a href="https://www.facebook.com/dmytroony/" class="socicon" target="_blank"><i
+							<a href="https://www.facebook.com/dmytroony/" class="social-icons" target="_blank"><i
 									class="fab fa-facebook fa-2x mx-5"></i></a>
-							<a href="https://www.linkedin.com/in/dmytroony/" class="socicon" target="_blank"><i
+							<a href="https://www.linkedin.com/in/dmytroony/" class="social-icons" target="_blank"><i
 									class="fab fa-linkedin fa-2x mx-5"></i></a>
-							<a href="https://twitter.com/dmytroony" class="socicon" target="_blank"><i
+							<a href="https://twitter.com/dmytroony" class="social-icons" target="_blank"><i
 									class="fab fa-twitter sm-fa-1x fa-2x mx-5"></i></a>
 						</div>
 					</div>
@@ -244,9 +248,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="card-footer bg-banner bg-dark">
+					<div id="Experience" class="card-footer bg-banner bg-dark">
 						<p class="text-light my-0">
-							Additionally: i&apos;d work with some of popular CMS, JS-libs, IDE&apos;s. English: A2
+							<span id="experienced">Experienced:</span> i&apos;d work with some of popular CMS, JS-libs,
+							IDE&apos;s. English: A2
 						</p>
 					</div>
 				</div>
@@ -256,8 +261,8 @@
 </section>
 <!--Skills END-->
 
-<!--Experience START-->
-<section id="Experience">
+<!--Projects START-->
+<section id="Projects">
 	<div class="container mt-5">
 		<span class="bg-info text-white">
 			Projects
@@ -267,9 +272,9 @@
 			<div class="col-lg-6 mb-3">
 				<div class="card bg-white">
 					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">I&apos;m Udemy Instructor</h3>
+					<h3 class="text-center text-primary">Project_1</h3>
 					<p class="lead text-justify px-3">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+						<span>About:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, fugit.
 						est eum expedita facilis fugit harum id iure magni maiores mollitia necessitatibus nisi odit
 						pariatur placeat recusandae rerum, sint voluptatibus voluptatum.
 					</p>
@@ -333,7 +338,7 @@
 		</div>
 	</div>
 </section>
-<!--Experience END-->
+<!--Projects END-->
 
 <!--Contact START-->
 <section id="Contact">
@@ -347,20 +352,20 @@
 				<div class="card bg-white">
 					<div class="card-header">
 						<h4 class=my-4"">Contact me on below</h4>
-						<div class="form-group">
-							<input class="form-control" type="text" placeholder="Full Name" required>
-						</div>
-						<div class="form-group">
-							<input class="form-control" type="email" placeholder="Email" required>
-						</div>
-						<div class="form-group">
-							<textarea class="form-control" placeholder="Your text here"></textarea>
-						</div>
-						<div class="form-group">
-							<button class="btn btn-info">
-								Submit
-							</button>
-						</div>
+						<!--						<div class="form-group">-->
+						<!--							<input class="form-control" type="text" placeholder="Full Name" required>-->
+						<!--						</div>-->
+						<!--						<div class="form-group">-->
+						<!--							<input class="form-control" type="email" placeholder="Email" required>-->
+						<!--						</div>-->
+						<!--						<div class="form-group">-->
+						<!--							<textarea class="form-control" placeholder="Your text here"></textarea>-->
+						<!--						</div>-->
+						<!--						<div class="form-group">-->
+						<!--							<button class="btn btn-info">-->
+						<!--								Submit-->
+						<!--							</button>-->
+						<!--						</div>-->
 					</div>
 				</div>
 			</div>
@@ -382,6 +387,12 @@
 	</div>
 </footer>
 <!--Footer END-->
+
+<div id="backToTop" class="container text-info" title="Back to Top">
+	<a href="#body">
+		<i class="fas fa-chevron-up"></i>
+	</a>
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
