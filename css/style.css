@@ -1,7 +1,7 @@
 :root {
   --bgColor: #f3fbff;
   --lnkColor: dodgerblue ;
-  --lnkHoverColor: #61dafb ;
+  --lnkHoverColor: #17a2b8;
   --bgBarColor: #343a40;
 }
 
@@ -27,6 +27,7 @@ body * {
 :any-link:hover,
 :any-link:focus {
   color: var(--lnkHoverColor);
+  text-decoration: none;
 }
 
 #Header a:hover {
@@ -140,27 +141,24 @@ a.socicon:hover,
   background-color: #61dafb !important;
 }
 
-#backToTop {
-  width: 3rem;
-  height: 3rem;
-  background-color:  rgba(30, 144, 255, .3);
+
+/* begin begin Back to Top button  */
+.back_to_top {
   position: fixed;
-  bottom: 1rem;
-  left: 1rem;
+  top: 4rem;
+  left: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   text-align: center;
-  border-radius: 10px;
-  padding: 0;
+  background-color:  rgba(30, 144, 255, .3);
+  color: #fff;
+  cursor: pointer;
+  border-radius: .3rem;
+  z-index: -1;
+  transform: scale(.8);
 }
 
-#backToTop a {
-  border-radius: 10px;
-  display: block;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-}
-
-#backToTop a:hover {
-  background-color:  var(--lnkHoverColor);
-  opacity: 1;
+.back_to_top:hover {
+  background-color: var(--lnkHoverColor);
+  transform: scale(1);
 }
