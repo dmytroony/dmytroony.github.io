@@ -40,7 +40,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<a href="./index.html" class="navbar-brand">
-					<h3>Dmytro Onysko</h3>
+					<h3 class="text-info">Dmytro Onysko</h3>
 				</a>
 				<div class="collapse navbar-collapse" id="Navbar">
 					<ul class="navbar-nav ml-auto">
@@ -83,7 +83,7 @@
 								<img
 										class="img-fluid rounded-top mx-5 d-none d-lg-block"
 										src="./img/me.png"
-										alt="Person photo"
+										alt="Personal photo"
 								>
 								<div class="media-body w-100">
 									<h3 class="h1-md h3-sm pl-4">
@@ -94,40 +94,52 @@
 									</p>
 									<div class="container">
 										<div class="container d-flex-row vertical-line ml-4">
-											<div class="d-flex">
-												<div class="text-muted">Email: </div>
-												<div>
-													<a href="mailto:dmytroony@gmail.com">
-														dmytroony@gmail.com
-													</a>
+											<div class="row">
+												<div class="col-lg-12 my-2">
+													<div class="d-flex">
+														<div class="text-muted pr-2">Email:</div>
+														<div>
+															<a href="mailto:dmytroony@gmail.com">
+																dmytroony@gmail.com
+															</a>
+														</div>
+													</div>
 												</div>
-											</div>
-											<div class="d-flex">
-												<div class="text-muted">Phone:</div>
-												<div>
-													<a href="tel:+380958052625">
-														+38 095 805 26 25
-													</a>
+												<div class="col-lg-12 my-2">
+													<div class="d-flex">
+														<div class="text-muted pr-2">Phone:</div>
+														<div>
+															<a href="tel:+380958052625">
+																+38 095 805 26 25
+															</a>
+														</div>
+													</div>
 												</div>
-											</div>
-											<div class="d-flex">
-												<div class="text-muted">Skype:</div>
-												<div>
-													<a href="skype:dm.onysko?chat">
-														dm.onysko
-													</a>
+												<div class="col-lg-12 my-2">
+													<div class="d-flex">
+														<div class="text-muted pr-2">Skype:</div>
+														<div>
+															<a href="skype:dm.onysko?chat">
+																dm.onysko
+															</a>
+														</div>
+													</div>
 												</div>
-											</div>
-											<div class="d-flex">
-												<div class="text-muted">English:</div>
-												<div>
-													A2-B1
+												<div class="col-lg-12 my-2">
+													<div class="d-flex">
+														<div class="text-muted pr-2">English:</div>
+														<div>
+															A2-B1
+														</div>
+													</div>
 												</div>
-											</div>
-											<div class="d-flex">
-												<div class="text-muted">Age:</div>
-												<div>
-													<span id="currentAge">Age</span> years old
+												<div class="col-lg-12 my-2">
+													<div class="d-flex">
+														<div class="text-muted pr-2">Age:</div>
+														<div>
+															<span id="currentAge">Age</span> years old
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -156,16 +168,20 @@
 			<div class="col">
 				<span class="bg-info text-white">About Me</span>
 				<hr class="bg-info"/>
-				<p class="lead text-justify">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique voluptate!
-					Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
-					rerum, soluta sunt temporibus voluptatem.
-				</p>
-				<p class="lead text-justify">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique voluptate!
-					Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
-					rerum, soluta sunt temporibus voluptatem.
-				</p>
+				<div class="backing">
+					<p class="lead text-justify">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
+						voluptate!
+						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
+						rerum, soluta sunt temporibus voluptatem.
+					</p>
+					<p class="lead text-justify">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
+						voluptate!
+						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
+						rerum, soluta sunt temporibus voluptatem.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -176,7 +192,7 @@
 <section id="Skills" class="mt-5">
 	<div class="container">
 		<span class="bg-info text-white">
-			My Tech-Skills
+			Skills
 		</span>
 		<hr class="bg-info"/>
 		<div class="row">
@@ -197,6 +213,22 @@
 							</h3>
 							<div class="progress mx-3">
 								<div class="progress-bar bg-success text-right">95%</div>
+							</div>
+						</div>
+						<div id="progress-sass-less-scss">
+							<h3 class="text-uppercase mx-3">
+								sass, less, scss
+							</h3>
+							<div class="progress mx-3">
+								<div class="progress-bar bg-success text-right">70%</div>
+							</div>
+						</div>
+						<div id="progress-flex-grid">
+							<h3 class="mx-3">
+								Flex, Grid
+							</h3>
+							<div class="progress mx-3">
+								<div class="progress-bar bg-success text-right">70%</div>
 							</div>
 						</div>
 						<div id="progress-js">
@@ -221,22 +253,6 @@
 							</h3>
 							<div class="progress mx-3">
 								<div class="progress-bar bg-warning text-right">30%</div>
-							</div>
-						</div>
-						<div id="progress-sass-less-scss">
-							<h3 class="text-uppercase mx-3">
-								sass, less, scss
-							</h3>
-							<div class="progress mx-3">
-								<div class="progress-bar bg-success text-right">70%</div>
-							</div>
-						</div>
-						<div id="progress-flex-grid">
-							<h3 class="mx-3">
-								Flex, Grid
-							</h3>
-							<div class="progress mx-3">
-								<div class="progress-bar bg-success text-right">70%</div>
 							</div>
 						</div>
 						<div id="progress-git">
@@ -270,13 +286,54 @@
 		<hr class="bg-info"/>
 		<div class="row">
 			<div class="col-lg-6 mb-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							The Rosa
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="font-bold text-justify px-3">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolore molestias
+							mollitia non officia possimus sed unde veniam voluptate voluptates?
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p>
+										html5, css3, js
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>scrollrevealJS</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="#" class="btn text-white"><i class="fas fa-images fa-2x m-0"></i></a>
+						<a href="#" class="btn text-white">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor" d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z" />
+							</svg>
+						</a>
+						<a href="#" class="btn text-white"><i class="fab fa-codepen fa-2x"></i></a>
+						<a href="#" class="btn text-white"><i class="fab fa-github fa-2x m-0"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 mb-3">
 				<div class="card bg-white">
 					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">Project_1</h3>
+					<h3 class="text-center text-primary">Apple Replica</h3>
 					<p class="lead text-justify px-3">
-						<span>About:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, fugit.
-						est eum expedita facilis fugit harum id iure magni maiores mollitia necessitatibus nisi odit
-						pariatur placeat recusandae rerum, sint voluptatibus voluptatum.
+						A landing page for The Rosa restaurant.
 					</p>
 				</div>
 			</div>
@@ -285,20 +342,7 @@
 					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
 					<h3 class="text-center text-primary">I&apos;m Udemy Instructor</h3>
 					<p class="lead text-justify px-3">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-						est eum expedita facilis fugit harum id iure magni maiores mollitia necessitatibus nisi odit
-						pariatur placeat recusandae rerum, sint voluptatibus voluptatum.
-					</p>
-				</div>
-			</div>
-			<div class="col-lg-6 mb-3">
-				<div class="card bg-white">
-					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">I&apos;m Udemy Instructor</h3>
-					<p class="lead text-justify px-3">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-						est eum expedita facilis fugit harum id iure magni maiores mollitia necessitatibus nisi odit
-						pariatur placeat recusandae rerum, sint voluptatibus voluptatum.
+						A bit the Apple site home page. Tech stack: html, css, js.
 					</p>
 				</div>
 			</div>
