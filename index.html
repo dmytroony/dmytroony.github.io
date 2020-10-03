@@ -30,7 +30,7 @@
 <!--Navbar START-->
 <header>
 	<div id="Header">
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 			<div class="container">
 				<button
 						class="navbar-toggler"
@@ -40,10 +40,13 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<a href="./index.html" class="navbar-brand">
-					<h3 class="text-info">Dmytro Onysko</h3>
+					<h3 class="text-white my-0">Dmytro Onysko</h3>
+				</a>
+				<a class="btn btn-primary text-white font-weight-bold ml-1 get_cv" href="#">
+					CV
 				</a>
 				<div class="collapse navbar-collapse" id="Navbar">
-					<ul class="navbar-nav ml-auto">
+					<ul class="navbar-nav ml-auto font-weight-bolder">
 						<li class="nav-item">
 							<a href="#About" class="nav-link text-info">About</a>
 						</li>
@@ -55,9 +58,6 @@
 						</li>
 						<li class="nav-item">
 							<a href="#Projects" class="nav-link text-info">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a href="#Contact" class="nav-link text-info">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -86,11 +86,11 @@
 										alt="Personal photo"
 								>
 								<div class="media-body w-100">
-									<h3 class="h1-md h3-sm pl-4">
+									<h3 class="h1-md h1-lg h3-sm pl-4">
 										I&apos;m Dmytro
 									</h3>
-									<p class="text-muted ml-4">
-										Web-Developer &amp; Entrepreneur
+									<p class="text-muted pl-4">
+										Front_End web-engineer
 									</p>
 									<div class="container">
 										<div class="container d-flex-row vertical-line ml-4">
@@ -127,16 +127,26 @@
 												</div>
 												<div class="col-lg-12 my-2">
 													<div class="d-flex">
+														<div class="text-muted pr-2">Telegram:</div>
+														<div>
+															<a href="http://t.me/dmytroony_work" target="_blank">
+																dmytroony_work
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-12 my-2">
+													<div class="d-flex">
 														<div class="text-muted pr-2">English:</div>
 														<div>
 															A2-B1
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-12 my-2">
+												<div class="col-lg-12 mt-2">
 													<div class="d-flex">
 														<div class="text-muted pr-2">Age:</div>
-														<div>
+														<div class="pb-0">
 															<span id="currentAge">Age</span> years old
 														</div>
 													</div>
@@ -150,10 +160,10 @@
 						<div class="card-footer bg-banner bg-dark text-right">
 							<a href="https://github.com/dmytroony" class="social-icons" target="_blank"><i
 									class="fab fa-github fa-2x mx-3"></i></a>
-							<a href="https://www.facebook.com/dmytroony/" class="social-icons" target="_blank"><i
-									class="fab fa-facebook fa-2x mx-5"></i></a>
 							<a href="https://www.linkedin.com/in/dmytroony/" class="social-icons" target="_blank"><i
 									class="fab fa-linkedin fa-2x mx-5"></i></a>
+							<a href="https://www.facebook.com/dmytroony/" class="social-icons" target="_blank"><i
+									class="fab fa-facebook fa-2x mx-5"></i></a>
 							<a href="https://twitter.com/dmytroony" class="social-icons" target="_blank"><i
 									class="fab fa-twitter sm-fa-1x fa-2x mx-5"></i></a>
 						</div>
@@ -168,19 +178,25 @@
 			<div class="col">
 				<span class="bg-info text-white">About Me</span>
 				<hr class="bg-info"/>
-				<div class="backing">
-					<p class="lead text-justify">
+				<div class="card p-4">
+					<div class="card-header lead text-left">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
 						voluptate!
 						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
 						rerum, soluta sunt temporibus voluptatem.
-					</p>
-					<p class="lead text-justify">
+					</div>
+					<div class="card-body lead text-left">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
 						voluptate!
 						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
 						rerum, soluta sunt temporibus voluptatem.
-					</p>
+					</div>
+					<div class="card-footer lead text-left">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
+						voluptate!
+						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
+						rerum, soluta sunt temporibus voluptatem.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -265,8 +281,9 @@
 						</div>
 					</div>
 					<div id="Experience" class="card-footer bg-banner bg-dark">
-						<p class="text-light my-0">
-							<span id="experienced">Experienced:</span> i&apos;d work with some of popular CMS, JS-libs,
+						<p class="text-white my-0">
+							<span id="experienced">Experienced:</span> also i&apos;d work with lot of popular CMS,
+							JS-libs,
 							IDE&apos;s. English: A2
 						</p>
 					</div>
@@ -284,8 +301,8 @@
 			Projects
 		</span>
 		<hr class="bg-info"/>
-		<div class="row">
-			<div class="col-lg-6 mb-3">
+		<div class="row projects-list">
+			<div class="col-lg-6 my-3">
 				<div class="card bg-white d-flex flex-col">
 					<div class="card-header text-center bg-dark">
 						<h3 class="card-title text-white my-0">
@@ -293,15 +310,14 @@
 						</h3>
 					</div>
 					<div class="card-body">
-						<p class="font-bold text-justify px-3">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolore molestias
-							mollitia non officia possimus sed unde veniam voluptate voluptates?
+						<p class="text-justify px-3">
+							Landing page of the restaurant "The Rose"
 						</p>
 						<div class="container border-2">
 							<div class="row">
 								<div class="col col-12 col-sm-4 col-lg-4 text-center">
 									<div class="text-muted pb-0">Tech stack:</div>
-									<p>
+									<p class="text-uppercase">
 										html5, css3, js
 									</p>
 								</div>
@@ -317,66 +333,557 @@
 						</div>
 					</div>
 					<div class="card-footer bg-dark text-center py-1">
-						<a href="#" class="btn text-white"><i class="fas fa-images fa-2x m-0"></i></a>
-						<a href="#" class="btn text-white">
+						<!--						<a href="#" class="btn text-white" target="_blank" title="Preview image">-->
+						<!--							<i class="fas fa-images fa-2x m-0"></i>-->
+						<!--						</a>-->
+						<a href="https://the-rosa-5946b.web.app/" class="btn text-white" target="_blank" title="Demo">
 							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
-								<path fill="currentColor" d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z" />
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
 							</svg>
 						</a>
-						<a href="#" class="btn text-white"><i class="fab fa-codepen fa-2x"></i></a>
-						<a href="#" class="btn text-white"><i class="fab fa-github fa-2x m-0"></i></a>
+						<a href="https://github.com/dmytroony/learning/tree/master/projects/html_css_js/the-rosa_responsive"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 mb-3">
-				<div class="card bg-white">
-					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">Apple Replica</h3>
-					<p class="lead text-justify px-3">
-						A landing page for The Rosa restaurant.
-					</p>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Developer portfolio 1
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							Simple and lightweight template for a web developer portfolio
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p class="text-uppercase">
+										html5, css3, js
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>ScrollMagic, GSAP(TimelineLite, TweenMax, CSSPlugin)</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://devsportfolio1.web.app/" class="btn text-white" target="_blank" title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/projects/html_css_js/devsportfolio_1"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 mb-3">
-				<div class="card bg-white">
-					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">I&apos;m Udemy Instructor</h3>
-					<p class="lead text-justify px-3">
-						A bit the Apple site home page. Tech stack: html, css, js.
-					</p>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Whackamole game
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							A simple game with code without using frameworks or libraries. You need to catch an animal
+							(press LMB).
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p class="text-uppercase">
+										html5, css3, js
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>none</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://whackamole-game.web.app/" class="btn text-white" target="_blank" title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/projects/JavaScript30/whackAMoleGame"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 mb-3">
-				<div class="card bg-white">
-					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">I&apos;m Udemy Instructor</h3>
-					<p class="lead text-justify px-3">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-						est eum expedita facilis fugit harum id iure magni maiores mollitia necessitatibus nisi odit
-						pariatur placeat recusandae rerum, sint voluptatibus voluptatum.
-					</p>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Apple Replica
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							A bit of the "Apple" homepage
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p class="text-uppercase">
+										html5, css3, js
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>none</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://apple-replica-3a408.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/projects/html_css_js/apple_replica"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 mb-3">
-				<div class="card bg-white">
-					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">I&apos;m Udemy Instructor</h3>
-					<p class="lead text-justify px-3">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-						est eum expedita facilis fugit harum id iure magni maiores mollitia necessitatibus nisi odit
-						pariatur placeat recusandae rerum, sint voluptatibus voluptatum.
-					</p>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Site React-app 2
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							Site app with a carousel, a pop-up window and a parallax effect.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p>
+										ReactJS
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>react-bootstrap, react-router-dom</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://react-site2app.web.app/" class="btn text-white" target="_blank" title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/javascript/frameworks/react/site2app"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="col-lg-6">
-				<div class="card bg-white">
-					<img class="img-fluid m-auto py-3" src="./img/udemy.svg" alt="example_1">
-					<h3 class="text-center text-primary">I&apos;m Udemy Instructor</h3>
-					<p class="lead text-justify px-3">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-						est eum expedita facilis fugit harum id iure magni maiores mollitia necessitatibus nisi odit
-						pariatur placeat recusandae rerum, sint voluptatibus voluptatum.
-					</p>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							ToDo React-app 2
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							Simple Todo app with animations and effects. Used Routing and realtime firebaseDB.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p>
+										ReactJS, firebaseDB
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>react-bootstrap, react-router-dom</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://react-todo4app.web.app/" class="btn text-white" target="_blank" title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/javascript/frameworks/react/todo4app"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							eMail Template
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							An adaptive eMail layout. Made on tables, HTML4 and used inline styles. Its works
+							cross-browser, adaptively, plus on the most popular mail clients like a Gmail, Outlook,
+							Bat, Mailspring, Thunderbird, other. Optimized to the spam filters any mail services. I also
+							rewrote and changed the layout of all the email templates of the hosting service for UK, RU
+							EN locales.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p>
+										HTML4, CSS, inline styles, eJS
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>none</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Commerce</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://email-template-9f6c2.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Developer portfolio on Bootstrap4
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							A nice and colorful portfolio template. Used animations, transitions, fontawesome.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p class="text-uppercase">
+										html5, css3, js
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>Bootstrap4, jQuery, Owl-carousel, Magnific-popup</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://portfolio1-bootstrap.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/projects/Bootstrap4/portfolio_1"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Pricing calculator
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							A Calculator of the web development pricing. Includes calculations: types of a site, design,
+							admin-panel, SEO metrics, time to develop.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p class="text-uppercase">
+										html5, css3, js, php
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>none</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://portfolio2-bootstrap.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/projects/html_css_js/jscalc"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Site React-app 1
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							My first react app. Realized home page site app with a carousel and some pages.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p>
+										ReactJS
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>react-bootstrap</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://react-site1app.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/javascript/frameworks/react/my1app"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							ToDo React-app 1
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							My first react ToDo app. Simple and lightweight.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p>
+										ReactJS
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>react-bootstrap, prop-types</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://react-site1app.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/javascript/frameworks/react/my1app"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Wooden Market
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							Site for a local company. Fully work on this site. From an idea, image selection, text
+							writing, to realization. Writing a text for fill the
+							site. Added a GoogleMap location script, a carousel script.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p class="text-uppercase">
+										html5, scss, css-grid, js, php
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>jQuery</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Commerce</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://carpentryshop-a8c91.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 my-3">
+				<div class="card bg-white d-flex flex-col">
+					<div class="card-header text-center bg-dark">
+						<h3 class="card-title text-white my-0">
+							Developer portfolio 2
+						</h3>
+					</div>
+					<div class="card-body">
+						<p class="text-justify px-3">
+							Monospace design like for a coder. Simple and minimal design. Works with the Local Storage
+							and save there chose color scheme. Added an embed google font.
+						</p>
+						<div class="container border-2">
+							<div class="row">
+								<div class="col col-12 col-sm-4 col-lg-4 text-center">
+									<div class="text-muted pb-0">Tech stack:</div>
+									<p class="text-uppercase">
+										html5, css3, js
+									</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Used libs:</div>
+									<p>none</p>
+								</div>
+								<div class="col col-12 col-sm-4 col-lg-4 mt-0 text-center">
+									<div class="text-muted">Type:</div>
+									<p>Training</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-footer bg-dark text-center py-1">
+						<a href="https://devsportfolio2.web.app/" class="btn text-white" target="_blank"
+						   title="Demo">
+							<svg style="width:32px;height:32px" viewBox="0 0 24 24">
+								<path fill="currentColor"
+								      d="M20,18.69L12.7,22.74C12.2,23 11.7,23 11.2,22.74L4,18.69L17.05,5.54L17.4,5.44C17.7,5.44 17.87,5.57 17.9,5.84L20,18.69M9.35,5.74L4.8,13.29L6.7,1.34C6.73,1.07 6.9,0.94 7.2,0.94C7.4,0.94 7.53,1 7.6,1.19L9.75,5.14L9.35,5.74M13.85,7L4.3,16.59L11.55,4.29C11.65,4.09 11.8,4 12,4C12.2,4 12.33,4.09 12.4,4.29L13.85,7Z"/>
+							</svg>
+						</a>
+						<a href="https://github.com/dmytroony/learning/tree/master/projects/html_css_js/devsportfolio_2-aws"
+						   class="btn text-white" target="_blank" title="Source Code">
+							<i class="fab fa-github fa-2x m-0"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -393,9 +900,40 @@
 		<hr class="bg-info"/>
 		<div class="row">
 			<div class="col">
-				<div class="card bg-white">
-					<div class="card-header">
-						<h4 class=my-4"">Contact me on below</h4>
+				<div class="card">
+					<div class="card-body">
+						<div class="container text-center">
+							<div class="row py-3">
+								<div class="col col-12 col-sm-12 col-lg-6 my-auto ">
+									<ul class="list-group text-left">
+										<li class="list-group-item">Do you like my ready-made projects?</li>
+										<li class="list-group-item">Is there a good offer for me?</li>
+										<li class="list-group-item bg-info text-white">
+											Check out my
+											<a href="#About" class="btn btn-primary text-white py-0 px-1">
+												Contacts area
+											</a><br>choose your favorite messenger<br>and contact me now!
+										</li>
+										<li class="list-group-item">Write, call, send carrier pigeons!</li>
+									</ul>
+								</div>
+								<div class="col col-12 col-sm-12 col-lg-6 my-auto">
+									<div class="container">
+										<div class="font-weight-bold text-muted">
+											or
+										</div>
+										<div>
+											<a class="btn btn-primary text-white py-2 px-4 my-4 font-weight-bold" href="#">
+												Get CV
+											</a>
+										</div>
+										<div class="text-uppercase text-muted">
+											just now
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

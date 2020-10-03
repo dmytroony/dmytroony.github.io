@@ -34,15 +34,23 @@ body * {
   color: #fff !important;
 }
 
+#Header .get_cv:hover::before {
+  /*content: 'GET';*/
+}
+#Header .get_cv,
+#Header .get_cv:hover,
+#Header .get_cv:focus {
+  border: none;
+}
+
 #bg-img {
-  background: url("../img/bg-laptop.jpeg") no-repeat center fixed;
+  background: url("../img/bg-laptop.jpeg") no-repeat fixed center;
   background-size: cover;
-  height: 100%;
-  max-height: 100vh;
+  height: 100vmin;
 }
 
 #About {
-  margin-top: -30%;
+  margin-top: -20vmax;
   width: 100% !important;
 }
 
@@ -56,9 +64,13 @@ body * {
 }
 
 a.socicon:hover,
+a.socicon:focus,
 .navbar-brand h3:hover,
+.navbar-brand h3:focus,
 #backToTop a:hover,
-.svg-inline--fa:hover {
+#backToTop a:focus,
+.svg-inline--fa:hover,
+.svg-inline--fa:focus {
   color: #61dafb !important;
   transition: none !important;
 }
@@ -138,7 +150,8 @@ a.socicon:hover,
   box-shadow: -2px 1px 20px -2px rgba(133,133,133,0.61);
 }
 
-#Projects .card svg {
+#Projects .card svg,
+#About svg {
   transition: none !important;
 }
 
@@ -148,6 +161,10 @@ a.socicon:hover,
   color: var(--lnkHoverColor) !important;
 }
 
+#Projects h3:before,
+#Projects h3:after {
+  content: '-';
+}
 
 #Experience span {
   border-radius: 3px !important;
@@ -158,7 +175,6 @@ a.socicon:hover,
   transition: background-color 4s ease-in-out;;
   background-color: #61dafb !important;
 }
-
 
 /* begin begin Back to Top button  */
 .back_to_top {
