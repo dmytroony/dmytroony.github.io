@@ -18,10 +18,10 @@
 	>
 
 	<!--FontAwesome-->
-	<link rel="stylesheet" href="./css/all.min.css">
+	<link rel="stylesheet" href="src/css/all.min.css">
 
 	<!--Custom CSS-->
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="src/css/style.css">
 
 	<title>Dmytro Portfolio</title>
 </head>
@@ -40,11 +40,27 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<a href="./index.html" class="navbar-brand">
-					<h3 class="text-white my-0">Dmytro Onysko</h3>
+					<h5 class="text-white my-0">Dmytro Onysko</h5>
 				</a>
-				<a class="btn btn-primary text-white font-weight-bold ml-1 get_cv" href="#">
-					CV
-				</a>
+				<div class="btn-group py-0">
+					<button type="button"
+					        class="btn btn-primary dropdown-toggle text-white pt-2 py-1 px-2 my-0 font-weight-bold"
+					        data-toggle="dropdown" aria-haspopup="true"
+					        aria-expanded="false"
+					>
+						CV
+					</button>
+					<div class="dropdown-menu text-center">
+						<a class="dropdown-item" href="#" title="Get a PDF document">PDF</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="https://resume.io/r/t4ewsdY6q"
+						   target="_blank"
+						   title="Interactive. Always fresh information"
+						>
+							Online
+						</a>
+					</div>
+				</div>
 				<div class="collapse navbar-collapse" id="Navbar">
 					<ul class="navbar-nav ml-auto font-weight-bolder">
 						<li class="nav-item">
@@ -82,7 +98,7 @@
 							<div class="media">
 								<img
 										class="img-fluid rounded-top mx-5 d-none d-lg-block"
-										src="./img/me.png"
+										src="src/img/me.png"
 										alt="Personal photo"
 								>
 								<div class="media-body w-100">
@@ -179,23 +195,22 @@
 				<span class="bg-info text-white">About Me</span>
 				<hr class="bg-info"/>
 				<div class="card p-4">
-					<div class="card-header lead text-left">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
-						voluptate!
-						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
-						rerum, soluta sunt temporibus voluptatem.
+					<div class="card-header text-left">
+						<span class="text-muted pl-0">Ready for any adequate conditions and offers:</span> full or part
+						time job, internship, individual contract, startups, other.
 					</div>
-					<div class="card-body lead text-left">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
-						voluptate!
-						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
-						rerum, soluta sunt temporibus voluptatem.
+					<div class="card-body text-left">
+						<span class="text-muted pl-0">At the moment I&apos;m considering offers:</span>in the Chernivtsi
+						city or remotely.
 					</div>
-					<div class="card-footer lead text-left">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut nesciunt placeat similique
-						voluptate!
-						Aspernatur culpa cupiditate dignissimos doloribus, facere fugit ipsa non, numquam odit pariatur
-						rerum, soluta sunt temporibus voluptatem.
+					<div class="card-footer text-left">
+						<span class="text-muted pl-0">Why web-development?</span>Web development is a personal dream and
+						a goal. Web development as a personal life style. Desire to learn, gain experience and achieve
+						results. The desire to grow and develop my skills. I constantly read and study.
+						Responsible. Self-management. Purposefulness.
+						Rich experience in various fields: build; management; process planning and organization;
+						marketing; sales offline, online, b2b, b2c; HR functions; law; business talks and
+						correspondence; writing technical tasks; other. I value time and resources.
 					</div>
 				</div>
 			</div>
@@ -1520,7 +1535,7 @@
 				<div class="card bg-white d-flex flex-col">
 					<div class="card-header text-center bg-dark">
 						<h3 class="card-title text-white my-0">
-							Click And Drag (feature)
+							Click And Drag
 						</h3>
 					</div>
 					<div class="card-body">
@@ -1575,7 +1590,8 @@
 								<div class="col col-12 col-sm-12 col-lg-6 my-auto ">
 									<ul class="list-group text-left">
 										<li class="list-group-item">Do you like my ready-made projects?</li>
-										<li class="list-group-item">Is there a good offer for me?</li>
+										<li class="list-group-item">Have a question?</li>
+										<li class="list-group-item">Is there a tasty offer for me?</li>
 										<li class="list-group-item bg-info text-white">
 											Check out my
 											<a href="#About" class="btn btn-primary text-white py-0 px-1">
@@ -1592,13 +1608,28 @@
 											or
 										</div>
 										<div>
-											<a class="btn btn-primary text-white py-2 px-4 my-4 font-weight-bold"
-											   href="#">
-												Get CV
-											</a>
+											<div class="btn-group">
+												<button type="button"
+												        class="btn btn-primary dropdown-toggle text-white py-2 px-2 my-4 font-weight-bold"
+												        data-toggle="dropdown" aria-haspopup="true"
+												        aria-expanded="false"
+												>
+													Get CV
+												</button>
+												<div class="dropdown-menu text-center w-100">
+													<a class="dropdown-item" href="#" title="Get a PDF document">PDF</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="https://resume.io/r/t4ewsdY6q"
+													   target="_blank"
+													   title="Interactive. Always fresh information"
+													>
+														Online
+													</a>
+												</div>
+											</div>
 										</div>
 										<div class="text-uppercase text-muted">
-											just now
+											right now
 										</div>
 									</div>
 								</div>
@@ -1650,10 +1681,10 @@
 ></script>
 
 <!--FontAwesome-->
-<script src="./js/all.min.js"></script>
+<script src="src/js/all.min.js"></script>
 
 <!--Custom JS-->
-<script src="./js/main.js"></script>
+<script src="src/js/main.js"></script>
 
 </body>
 </html>

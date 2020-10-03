@@ -26,17 +26,30 @@ body * {
 
 :any-link:hover,
 :any-link:focus {
-  color: var(--lnkHoverColor);
-  text-decoration: none;
+  color: var(--lnkHoverColor) !important;
+  text-decoration: none !important;
+}
+
+button,
+a,
+button:focus,
+a:focus,
+button:active,
+a:active,
+button:visited,
+a:visited,
+button:link,
+a:link,
+button:target,
+a:target {
+  border: none !important;
+  box-shadow: none !important;
 }
 
 #Header a:hover {
   color: #fff !important;
 }
 
-#Header .get_cv:hover::before {
-  /*content: 'GET';*/
-}
 #Header .get_cv,
 #Header .get_cv:hover,
 #Header .get_cv:focus {
@@ -174,6 +187,19 @@ a.socicon:focus,
 #experienced:target {
   transition: background-color 4s ease-in-out;;
   background-color: #61dafb !important;
+}
+
+.dropdown-menu {
+  min-width: initial;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0 .8rem;
+}
+
+.dropdown-menu a:hover,
+a.dropdown-item:hover {
+  color: var(--lnkHoverColor) !important;
 }
 
 /* begin begin Back to Top button  */
