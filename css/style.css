@@ -106,11 +106,11 @@ a.socicon:focus,
 }
 
 #progress-js .progress-bar {
-  width: 45%;
+  width: 70%;
 }
 
 #progress-jquery .progress-bar {
-  width: 70%;
+  width: 45%;
 }
 
 #progress-react .progress-bar {
