@@ -202,10 +202,14 @@ a.dropdown-item:hover {
   color: var(--lnkHoverColor) !important;
 }
 
+.contacts_area_link:hover {
+  color: var(--bgColor) !important;
+}
+
 /* begin begin Back to Top button  */
 .back_to_top {
   position: fixed;
-  top: 4rem;
+  top: 3em;
   left: 1.5rem;
   width: 2.5rem;
   height: 2.5rem;
