@@ -46,7 +46,7 @@ a:target {
   box-shadow: none !important;
 }
 
-#Header a:hover {
+#Header ul a:hover {
   color: #fff !important;
 }
 
