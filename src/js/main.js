@@ -16,3 +16,27 @@ window.addEventListener('scroll', function() {
 	arrowTop.hidden = (pageYOffset < document.documentElement.clientHeight);
 	arrowTop.style.zIndex = '9999';
 });
+
+
+// Resume update - upload
+let getResumeDate = (refreshType, year, month, day) => {
+	let refreshDate = `${year}.${month}.${day}`;
+
+	if (refreshType === 'pdf') {
+		document.body.querySelectorAll('.typePdf')
+			.forEach(typePdf => {
+				typePdf.title = `Last upload: ${refreshDate}`
+			});
+	}
+	if (refreshType === 'online') {
+		document.body.querySelectorAll('.typeOnline')
+			.forEach(typeOnline => {
+				typeOnline.title = `Last update: ${refreshDate}`
+			});
+	}
+
+
+}
+
+getResumeDate('pdf',2020, 10, 4);
+getResumeDate('online',2020, 10, 4);
