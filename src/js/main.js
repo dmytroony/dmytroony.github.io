@@ -38,5 +38,5 @@ let getResumeDate = (refreshType, year, month, day) => {
 
 }
 
-getResumeDate('pdf',2020, 10, 4);
-getResumeDate('online',2020, 10, 4);
+getResumeDate('pdf',2020, 10, 15);
+getResumeDate('online',2020, 10, 15);

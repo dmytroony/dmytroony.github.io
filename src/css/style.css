@@ -130,6 +130,10 @@ a.socicon:focus,
   width: 30%;
 }
 
+#progress-vue .progress-bar {
+  width: 10%;
+}
+
 #progress-sass-less-scss .progress-bar {
   width: 70%;
 }
